@@ -1,0 +1,43 @@
+#regForm {
+  background-color: #06162D;
+  margin: 100px auto;
+  padding: 100px;
+  width: 80%;
+  min-width: 300px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  color: #000000;
+  border: 1px solid #aaaaaa;
+}
+
+/* Errors are marked invalid: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Errors are marked invalid: */
+.step.finish {
+  background-color: #4CAF50;
+}
